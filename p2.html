@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF - 2</title>
+</head>
+<body>
+    <h1 class="circle"></h1>
+</body>
+</html>
+
+<script>
+    function circleArea(radius){
+
+        const pi = 3.14;
+        return pi * radius * radius;
+    }
+
+    let area = document.querySelector(".circle").innerHTML = "Area Of Circle Is: " + circleArea(5);
+
+</script>
