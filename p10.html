@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF - 10</title>
+</head>
+<body>
+    <h1 class="beforeswap"></h1>
+    <h1 class="swap"></h1>
+</body>
+</html>
+
+<script>
+
+    let first = parseInt(prompt("Enter Value Of A:- "));
+
+    let second = parseInt(prompt("Enter Value Of B:- "));
+
+    let beforeswap = document.querySelector(".beforeswap");
+
+    beforeswap.innerHTML = `Before Swapping Value Of A:- ${first} <br> Before Swapping Value Of B:- ${second} <br><br>`;
+
+    let swap = document.querySelector(".swap"); 
+
+    function swapNum(a, b){
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        swap.innerHTML = `After Swapping Value Of A:- ${a} <br> After Swapping Value Of B:- ${b} <br><br>`;
+        
+    }
+
+    swapNum(first, second);
+</script>

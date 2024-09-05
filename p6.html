@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF - 6</title>
+</head>
+<body>
+    <h1 class="formula"></h1>
+</body>
+</html>
+
+<script>
+    function formula(a, b, c){
+
+        return (a*a) + (2*a*b) + (b*b);
+    }
+
+    let area = document.querySelector(".formula").innerHTML = "Answer Of (A*A) + (2*A*B) + (B*B) Is:- " + formula(10,15);
+
+</script>

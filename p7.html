@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF - 7</title>
+</head>
+<body>
+    <h1 class="convertfc"></h1>
+</body>
+</html>
+
+<script>
+    function convertFC(f){
+
+        return (f-32)/1.8;
+    }
+
+    let area = document.querySelector(".convertfc").innerHTML = "Conerted Fahrenheit to Celsius Is:- " + convertFC(50);
+
+</script>

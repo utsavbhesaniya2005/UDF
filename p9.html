@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF - 9</title>
+</head>
+<body>
+    <h1 class="check"></h1>
+</body>
+</html>
+
+<script>
+
+    let check = parseInt(prompt("Enter Number To Check It Is Even Or Odd:- "));
+
+    let chk = document.querySelector(".check");
+
+    function EvenOrOdd(num){
+
+        if(num % 2 == 0){
+
+            chk.innerHTML = "Number You Have Entered Is Even.";
+        }else{
+
+            chk.innerHTML = "Number You Have Entered Is Odd.";
+        }
+        
+    }
+
+    EvenOrOdd(check);
+</script>
